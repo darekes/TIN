@@ -23,7 +23,7 @@ class Form extends React.Component {
 
     checkField(fieldName, value){
         let validationErrors = this.state.formErrors;
-        let emailPattern = /^\w+@\w+\.\w+$/;
+        let emailPattern = /^\S+@\S+/;
         switch(fieldName){
             case 'name':
                 if(value.length < 5){
